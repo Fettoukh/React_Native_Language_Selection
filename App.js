@@ -1,6 +1,7 @@
 import * as React from 'react';
 import * as Localization from 'expo-localization';
 import { StyleSheet, Text, View, Button } from 'react-native';
+
 import i18n from 'i18n-js';
 
 // Set the key-value pairs for the different languages you want to support.
@@ -45,6 +46,7 @@ export default class App extends React.Component {
             <Button title="en" onPress={() => this._changeLanguage('en')} />
             <Button title="fr" onPress={() => this._changeLanguage('fr')} />
             <Button title="ja" onPress={() => this._changeLanguage('ja')} />
+
         </View>
     );
 }
